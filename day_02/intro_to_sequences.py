@@ -26,7 +26,7 @@ print("The last food is"+ str({foods[3]}))
 
 # --- Section 2: Changing a List ---
 
-# Lists can grow and shrink using built-in methods.
+#Lists can grow and shrink using built-in methods.
 
 # TODO: Add a new food to the end of your list with .append()
 
