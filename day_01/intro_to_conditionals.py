@@ -12,7 +12,8 @@ Your job is to experiment, fill in blanks, and notice how conditionals change wh
 
 # TODO: Create two variables. One that represents age, and the other a boolean that is True if you are a student and false if you are not:
 
-
+age=16
+student=True
 # What happens when we compare numbers?
 print("Is age greater than 18?", )
 print("Is age less than 13?", )
@@ -38,8 +39,7 @@ print("You can vote!")   # TODO: What’s wrong with this approach?
 # Now add an IF statement:
 # if ___:
 #     print("You can vote!")
-age=16
-student=True
+
 if age>=18:
     print("you can vote!")
 
@@ -69,6 +69,17 @@ else:
 
 # Write this using if / elif / else statements.
 
+grade=60
+if grade>=90:
+    print("A")
+elif grade>=80:
+    print("B")
+elif grade>=70:
+    print("C")
+elif grade>=60:
+    print("D")
+else:
+    print("F")
 
 # --- Section 5: Nesting Conditionals ---
 
@@ -87,7 +98,9 @@ else:
 
 # --- Section 6: Reflection ---
 # Answer in comments:
-# 1. What does a conditional REQUIRE in order to run effectively?
+# 1. What does a conditional REQUIRE in order to run effectively? a conditional require an if else statement and two equal signs that set up the conditional 
 #    (Think: a test/condition that evaluates to True or False)
 # 2. How do elif and else make your code shorter or more readable?
+    # you can just ignore the same conditional if earlier codes already cover that. e.g. for the grading thing, i don't have to write it as if grade<=90 and grade>=80, because the grade can;t exceed 90, or else it would make the earlier conditional true. 
 # 3. Can you think of a situation in real life where you’d use multiple conditionals?
+    #  yes. So if I know that have workjob on B block, or I that I have my half credits on B block, I would finish my work the night before because I know that I don't have a free block the next day. 

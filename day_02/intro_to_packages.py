@@ -26,6 +26,7 @@ import random
 num1=random.randint(1,10)
 num2=random.randint(1,10)
 num3=random.randint(1,10)
+print(num1, num2, num3)
 # ---------------------------------------------------
 # Level 2 – Complex Numbers with cmath
 # Task:
@@ -38,7 +39,8 @@ import cmath
 # TODO: Print the square root of -1 using cmath
 
 num4=-1
-num5=cmath.sqrt(num4)
+print(cmath.sqrt(num4))
+
 # ----------------
 # -----------------------------------
 # Level 3 – User Input Basics
@@ -48,8 +50,8 @@ num5=cmath.sqrt(num4)
 # ---------------------------------------------------
 
 # TODO: Ask for the user’s name and print a greeting
-
-
+name=input("what is your name?")
+print("Hi!"+name)
 # ---------------------------------------------------
 # Level 4 – Converting Input to Numbers
 # Task:
@@ -57,7 +59,8 @@ num5=cmath.sqrt(num4)
 # 2. Convert it to an integer
 # 3. Multiply it by 2 and print the result
 # ---------------------------------------------------
-
+num=int(input("input a number"))
+print(num*2)
 # TODO: Ask for a number, convert it to int, double it, and print
 
 
@@ -70,9 +73,13 @@ num5=cmath.sqrt(num4)
 # ---------------------------------------------------
 
 # TODO: Generate a random complex number with integer real and imaginary parts
-
-
-# ---------------------------------------------------
+import random
+real=random.randint(-10,10)
+imaginary=random.randint(-10,10)
+complexnum=complex(real, imaginary)
+print(f"complex number: {complexnum}")
+# --------------------------------------
+# -------------
 # Level 6 – Complex Number Guesser Game
 # Rules:
 # 1. Computer picks a random complex number (real and imaginary parts between -5 and 5)
@@ -95,7 +102,22 @@ print("I have chosen a complex number with real and imaginary parts between -5 a
 # - Ask separately for real and imaginary guesses
 # - Convert inputs to integers
 # - Use if/else to give “too high” / “too low” feedback
-
+realnum=int(input("input a real number"))
+while realnum != target_real:
+    if realnum<target_real:
+        print("too low")
+    else: 
+        print("too high")
+    realnum=int(input("input a real number"))
+imagnum=complex(input("input an imaginary number"))
+print(target_imag)
+while imagnum != target_imag:
+    if imagnum<target_imag:
+        print("too low")
+    else: 
+        print("too high")
+    realnum=complex(input("input a imaginary number"))
+print("you got it")
 
 # ---------------------------------------------------
 # Extensions (Optional)

@@ -157,7 +157,8 @@ for i in range(len(list)):
 # --- Section 8: Reflection ---
 # Answer in comments:
 # 1. How is a list different from a dictionary?
-# 2. When would you want to use a dictionary instead of a list?
+# a list includes several components that are not given a specific vaiable name, while for dictionary, there is a special variable name for each component 
+# 2. When would you want to use a dictionary instead of a list? when you're looking for something specific and 
 # 3. Can you think of a real-world situation where combining lists and dictionaries would be useful?
 # 4. What types of mistakes gave you the most errors today?
 # 5. How might noticing errors actually help you learn?
