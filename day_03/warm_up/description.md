@@ -16,6 +16,9 @@ This challenge combines several Python concepts you have been learning:
 ## Game Rules
 
 ### Starting Conditions
+
+energy=10
+
 - Player begins with **10 energy points**.
 - The game continues as long as **energy > 0** and ends when:
   - Energy reaches **20** → Player escapes and wins
