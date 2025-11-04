@@ -1,0 +1,24 @@
+{% extends 'base.html'%}
+{%block title%}
+<h1>Contact Page</h1>
+{% endblock %}
+
+
+{% block content %}
+ 
+{%if is_student%}
+<p>no email needed go study</p>
+{% else %}
+<p>
+Name: Katie
+Age: 1213
+Email: {{ email }}
+</p>
+
+{% endif %}
+{%if phone_number%}
+<p>{{phone_number}}</p>
+{% else %}
+<p>invlaid phone number</p>
+{% endif %}
+{% endblock %}
