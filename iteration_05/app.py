@@ -9,8 +9,8 @@ def home():
 
 @app.route("/contact")
 def contact():
-    phone_number = None
-    is_student=True
+    phone_number = 13000000000
+    is_student=False
     email = "khu27@nmhschool.org"
     return render_template("contact.html", email=email, is_student=is_student, phone_number=phone_number)
 @app.route("/tools_used")
